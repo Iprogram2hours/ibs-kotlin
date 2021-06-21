@@ -1,7 +1,7 @@
 package ru.ibs.kotlin.module2
 
 fun task9() {
-    var countryTable: Array<Array<String>> = Array(3) { Array(3) { "" } }
+    val countryTable: Array<Array<String>> = Array(3) { Array(3) { "" } }
     countryTable[0] = arrayOf("Россия", "Великобритания", "США", "Мексика")
     countryTable[1] = arrayOf("Москва", "Лондон", "Вашингтон", "Мехико")
     countryTable[2] = arrayOf("Российский рубль", "Фунт Стерлинга", "Доллар", "Песо")

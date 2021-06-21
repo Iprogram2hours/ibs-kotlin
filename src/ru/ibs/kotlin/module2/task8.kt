@@ -10,7 +10,7 @@ fun task8() {
     println("Введите ежемесячный процент по вкладу:")
     val monthPercent = readLine().toString().toDouble()
 
-    var totalAmount = depositAmount;
+    var totalAmount = depositAmount
     var monthIncome: Double
     for (i in 1..duration) {
         monthIncome = totalAmount * (monthPercent / 100.0)
