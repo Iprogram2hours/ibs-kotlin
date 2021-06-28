@@ -21,7 +21,7 @@ fun task8() {
     }
 }
 
-fun round(number: Double, scale: Int): Double {
+private fun round(number: Double, scale: Int): Double {
     var pow = 10
     for (i in 1 until scale) pow *= 10
     val tmp = number * pow

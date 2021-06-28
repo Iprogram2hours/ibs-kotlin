@@ -1,18 +1,13 @@
 package ru.ibs.kotlin.module3
 
-import ru.ibs.kotlin.module2.round
-
 fun task16() {
-    testSqrt(1.0, 0,1.0)
-    testSqrt(0.015625, 3,0.125)
-    testSqrt(15625.0, 0,125.0)
-    testSqrt(12321.0, 0,111.0)
-    testSqrt(0.9801, 2,0.99)
-}
-
-private fun testSqrt(x: Double, accuracy: Int, test: Double) {
-    val res = sqrt(x)
-    println("res: $res, rounded: ${round(res, accuracy)}, comparing: ${test == res}")
+    assert(sqrt(1.0) == 1.0)
+    assert(sqrt(0.015625) == 0.125)
+    assert(sqrt(15625.0) == 125.0)
+    assert(sqrt(12321.0) == 111.0)
+    assert(sqrt(0.9801) == 0.99)
+    assert(sqrt(0.0001) == 0.01)
+    assert(sqrt(0.000001) == 0.001)
 }
 
 private fun sqrt(x: Double): Double {
