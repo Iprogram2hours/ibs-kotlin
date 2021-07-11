@@ -1,6 +1,6 @@
 package ru.ibs.kotlin.module4
 
-open class Aircraft(_number:String, _tankCapacity:Long, _maxFlightRange:Double) {
+abstract class Aircraft(_number:String, _tankCapacity:Long, _maxFlightRange:Double) {
 
     var number:String = _number
     var tankCapacity:Long = _tankCapacity
